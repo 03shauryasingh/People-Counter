@@ -1,20 +1,18 @@
-.main {
-  display: flex;
-  justify-content: center;
-  background-image: url(images/people1.jpg);
-  filter: brightness(50%);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
+.blurred {
   width: 600px;
   height: 400px;
+  position: absolute;
+  background-image: url(/images/people1.jpg);
+  z-index: 0;
+  filter: blur(2px) brightness(40%);
 }
 
-.item {
+.home {
+  width: 600px;
+  height: 400px;
   display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
   color: white;
-  align-items: center;
-  font-size: 50px;
 }
