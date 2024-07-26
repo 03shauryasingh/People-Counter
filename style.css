@@ -1,18 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
 .blurred {
   width: 600px;
   height: 400px;
-  position: absolute;
   background-image: url(/images/people1.jpg);
-  z-index: 0;
   filter: blur(2px) brightness(40%);
 }
 
 .home {
   width: 600px;
   height: 400px;
+  position: absolute;
+  color: white;
+}
+
+.pagetitle {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+  width: 600px;
+  height: 150px;
+}
+
+.btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 100px;
+  height: 90px;
+}
+#count {
   display: flex;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
-  color: white;
+
+  align-items: center;
+  width: 100%;
+  font-size: 60px;
+}
+
+.btn-inc,
+.btn-dec {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-inc:active,
+.btn-dec:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
