@@ -57,7 +57,6 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
-
   height: 90px;
 }
 #count-el {
@@ -71,7 +70,8 @@ body {
 
 #btn-inc,
 #save,
-#btn-dec {
+#btn-dec,
+#reset {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   background-color: antiquewhite;
@@ -92,7 +92,8 @@ body {
 
 #btn-inc:active,
 #save:active,
-#btn-dec:active {
+#btn-dec:active,
+#reset:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
