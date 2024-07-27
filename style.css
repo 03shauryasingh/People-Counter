@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: antiquewhite;
+  background-color: rgb(246, 212, 168);
 }
 
 .main {
@@ -18,6 +18,7 @@ body {
   height: 400px;
   background-image: url(/images/people1.jpg);
   filter: blur(2px) brightness(40%);
+  padding: 5px;
 }
 
 .home {
@@ -25,6 +26,10 @@ body {
   height: 400px;
   position: absolute;
   color: white;
+  margin: 0;
+  padding: -10px;
+  border: 10px solid black;
+  border-radius: 25px;
 }
 
 .pagetitle {
@@ -39,14 +44,23 @@ body {
   color: antiquewhite;
 }
 
-.btn {
+#total-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+}
+
+#btn {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
+
   height: 90px;
 }
-#count {
+#count-el {
   display: flex;
   justify-content: center;
 
@@ -55,8 +69,9 @@ body {
   font-size: 60px;
 }
 
-.btn-inc,
-.btn-dec {
+#btn-inc,
+#save,
+#btn-dec {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   background-color: antiquewhite;
@@ -75,8 +90,9 @@ body {
   touch-action: manipulation;
 }
 
-.btn-inc:active,
-.btn-dec:active {
+#btn-inc:active,
+#save:active,
+#btn-dec:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
@@ -86,4 +102,7 @@ h1,
 h2 {
   text-shadow: #000 3px 3px 1px;
   color: antiquewhite;
+}
+
+#total-count {
 }

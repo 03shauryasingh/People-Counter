@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
   <body>
     <div class="main">
       <div class="blurred"></div>
-      <div class="home">
+      <div class="home wrapper box">
         <h1 class="pagetitle">Page Counter</h1>
-        <h2 id="count">0</h2>
-        <div class="btn">
-          <button class="btn-inc" role="button">Increment</button>
-          <button class="btn-dec" role="button">Decrement</button>
+
+        <h2 id="count-el">0</h2>
+
+        <div id="btn">
+          <button id="btn-inc" onclick="increment()">Increment</button>
+          <button id="save" onclick="saveCount()">save</button>
+          <button id="btn-dec" role="button" onclick="decrement()">
+            Decrement
+          </button>
         </div>
+        <h2 id="total-count">Previous Entries:</h2>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
