@@ -9,7 +9,7 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
   align-items: center;
 }
 
@@ -106,4 +106,16 @@ h2 {
 }
 
 #total-count {
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #eef8ee;
+  background-color: #1c3457;
+  height: 5vh;
+}
+a {
+  color: aqua;
 }
